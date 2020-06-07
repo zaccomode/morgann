@@ -1,0 +1,29 @@
+/* Page Elements */
+.home-container {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    
+    align-items: flex-start;
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    
+    color: white;
+    
+    margin: 4rem;
+    
+    width: 50%;
+}
+
+.home-text.right {
+    text-align: right;
+    align-self: flex-end;
+}
+
+.homt-text > p {
+    width: 50%;
+}

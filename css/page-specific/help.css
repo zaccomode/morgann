@@ -1,0 +1,105 @@
+/* Layout Assistance */
+.page-content {
+    height: calc(90% - 60px);
+}
+
+
+/* Nav Content */
+.nav {
+    background-image: url(../../assets/backgrounddark.png);
+}
+
+.nav-left {
+    width: 50%;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.nav-left > img {
+    margin: 10px;
+}
+
+.nav-right {
+    width: 50%;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+
+/* Column Content */
+.column {
+    height: 100%;
+}
+
+.sep {
+    width: 2%;
+}
+
+.column-left {
+    width: 28%;
+}
+
+.column-left > .button {
+    width: 100%;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.column-right {
+    width: 68%;
+    
+    white-space: nowrap;
+    overflow: scroll;
+    
+    -webkit-overflow-scrolling: touch;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Card Content */
+.card {
+    display: flex;
+    flex-direction: column;
+    
+    height: 99%;
+    
+    
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-bottom: 1px solid white;
+    
+    margin-right: 2%;
+}
+
+.card > h1 {
+    margin: 20px 40px;
+    
+    font-size: 25px;
+}
+
+.card > h2 {
+    margin: 20px 40px;
+    
+    font-size: 20px;
+}
+
+.card > p {
+    margin: 20px 40px;
+    width: 300px;
+    white-space: normal;
+    
+    font-size: 15px;
+}
+
+p.code {
+    font-family: robotoMono;
+    text-align: center;
+}

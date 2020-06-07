@@ -1,0 +1,208 @@
+/* Fonts */
+@font-face {
+    font-family: "newYork";
+    src: url("../Assets/Fonts/NewYorkExtraLarge-Medium.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "newYork";
+    src: url("../Assets/Fonts/NewYorkExtraLarge-MediumItalic.otf");
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: "newYork";
+    src: url("../Assets/Fonts/NewYorkExtraLarge-Heavy.otf");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "newYork";
+    src: url("../Assets/Fonts/NewYorkExtraLarge-HeavyItalic.otf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "robotoMono";
+    src: url("../Assets/Fonts/RobotoMono-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Layout Assistance */
+.page-content {
+    margin: 40px;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/* Page Content */
+body, html {
+    background-image: url(../assets/backgrounddark.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    height: 100%;
+    margin: 0;
+}
+
+h1, h3 {
+    font-family: newYork;
+    font-weight: bold;
+    color: white;
+    
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: newYork;
+    font-weight: bold;
+    color: white;
+}
+
+p {
+    font-family: newYork;
+    color: white;
+}
+
+
+/* Nav Content */
+.nav {
+    background-image: url(../assets/backgroundlight.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+/* Hero Content */
+.hero-image {
+    background-image: url(../assets/backgroundlight.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    height: 95%;
+    width: 100%;
+}
+
+.hero-logo {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    max-width: 800px; 
+    width: 75%;
+}
+
+.hero-scrolldown {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    
+    color: white;
+}
+
+.hero-scrolldown > p {
+    font-weight: bold;
+    font-style: italic;
+    
+    margin-bottom: 0px;
+}
+
+
+/* Footer Content */
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-color: rgba(0,0,0,0.2);
+    margin: 2rem;
+}
+
+.footer > img {
+    max-height: 20px;
+    width: auto;
+    
+    padding-left: 20px;
+}
+
+.footer > p {
+    padding-right: 20px;
+    
+    font-size: 12px;
+    text-align: right;
+    font-style: italic;
+}
+
+
+/* Buttons */
+.button {
+    padding: 10px 75px 10px 75px;
+    margin: 10px;
+    
+    border: none;
+    border-bottom: 1px solid white;
+    max-height: 50px;
+    
+    background: none;
+    color: white;
+    text-decoration: none;
+    
+    font-family: newYork;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.button.primary {
+    border: 1px solid white;
+}
+
+.button.active {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.button:hover {
+    background: white;
+    color: black;
+    
+    transition-duration: 0.1s;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1000px) {
+    .page-content {
+        margin: 40px;
+    }
+}
