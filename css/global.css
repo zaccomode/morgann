@@ -1,32 +1,32 @@
 /* Fonts */
 @font-face {
     font-family: "newYork";
-    src: url("../Assets/Fonts/NewYorkExtraLarge-Medium.otf");
+    src: url("../assets/fonts/NewYorkExtraLarge-Medium.otf");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: "newYork";
-    src: url("../Assets/Fonts/NewYorkExtraLarge-MediumItalic.otf");
+    src: url("../assets/fonts/NewYorkExtraLarge-MediumItalic.otf");
     font-weight: normal;
     font-style: italic;
 }
 @font-face {
     font-family: "newYork";
-    src: url("../Assets/Fonts/NewYorkExtraLarge-Heavy.otf");
+    src: url("../assets/fonts/NewYorkExtraLarge-Heavy.otf");
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: "newYork";
-    src: url("../Assets/Fonts/NewYorkExtraLarge-HeavyItalic.otf");
+    src: url("../assets/fonts/NewYorkExtraLarge-HeavyItalic.otf");
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: "robotoMono";
-    src: url("../Assets/Fonts/RobotoMono-Regular.ttf");
+    src: url("../assets/fonts/RobotoMono-Regular.ttf");
     font-weight: normal;
     font-style: normal;
 }
