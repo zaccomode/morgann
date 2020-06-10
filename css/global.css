@@ -56,6 +56,10 @@ body, html {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1, h3 {
     font-family: newYork;
     font-weight: bold;
@@ -70,7 +74,7 @@ h2 {
     color: white;
 }
 
-p {
+p, ul {
     font-family: newYork;
     color: white;
 }

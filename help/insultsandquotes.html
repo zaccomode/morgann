@@ -30,7 +30,7 @@
             </div>  
             
             <div class="nav-right">
-                <button class="button active">Help</button>
+                <a class="button active" href="insultsandquotes.html">Help</a>
                 <a class="button primary" href="https://discord.com/oauth2/authorize?client_id=705548577136574576&permissions=522304&scope=bot" target="_blank">Invite</a>
             </div>
         </nav>
@@ -39,15 +39,15 @@
         <div class="page-content">
         
             <div class="column column-left">
-                <button class="button active">Insults & Quotes</button>
-                <button class="button ">Cards & Melons</button>
-                <button class="button ">Admin Tools</button>
+                <a href="insultsandquotes.html" class="button active">Insults & Quotes</a>
+                <a href="cardsandmelons.html" class="button ">Cards & Melons</a>
+                <a href="admintools.html" class="button ">Admin Tools</a>
                 
                 <br>
                 <br>
                 <br>
                 
-                <button class="button ">Update Log</button>
+                <a href="updatelog.html" class="button">Update Log</a>
             </div>
             
             <div class="column sep" style="border-right: 1px solid white;"></div>
@@ -55,92 +55,96 @@
             
             <div class="column column-right">
                 
-                <!-- Targeting Users Card -->
-                <div class="card">
-                    <h1>Targeting users</h1>
-                    <h2>Suggested Usage:</h2>
-                    <p class="code">Morgann target @user</p>
-                    <p>Every time the mentioned user sends a message, Morgann will automaticaly reply with an insult.</p>
-                    
-                    <br>
-                    
-                    <h2>Variations:</h2>
-                    <p class="code">Morgann target off</p>
-                    <p>
-                        Morgann will stop targeting any users, and disable non-admins from targeting anyone until somebody is targeted again.
+                <div class="scroll-content">
+                
+                    <!-- Targeting Users Card -->
+                    <div class="card">
+                        <h1>Targeting users</h1>
+                        <h2>Suggested Usage:</h2>
+                        <p class="code">Morgann target @user</p>
+                        <p>Every time the mentioned user sends a message, Morgann will automaticaly reply with an insult.</p>
+
                         <br>
+
+                        <h2>Variations:</h2>
+                        <p class="code">Morgann target off</p>
+                        <p>
+                            Morgann will stop targeting any users, and disable non-admins from targeting anyone until somebody is targeted again.
+                            <br>
+                            <br>
+                            <i>Admin Feature</i>
+                        </p>
+                    </div>
+
+                    <!-- Insults Card -->
+                    <div class="card">
+                        <h1>Insults</h1>
+                        <h2>Adding an Insult:</h2>
+                        <p class="code">Morgann add insult [your insult]</p>
+                        <p>
+                            Adds an insult to the pool of insults used when targeting a user.
+                            <br>
+                            <br>
+                            <i>This pool is server-specific.</i>
+                        </p>
+
                         <br>
-                        <i>Admin Feature</i>
-                    </p>
+
+                        <h2>Searching & Removing:</h2>
+                        <p class="code">
+                            Morgann search insult [insult]
+                            <br>
+                            <br>
+                            <i>OR</i>
+                            <br>
+                            <br>
+                            Morgann random insult
+                        </p>
+                        <p>
+                            Shows an insult found using the search query.
+                            <br>
+                            Admins may remove an insult by reacting 🗑️ to the message.
+                            <br>
+                            <br>
+                            <i>Removing is an Admin Feature</i>
+                        </p>
+                    </div>
+
+                    <!-- Quotes Card -->
+                    <div class="card">
+                        <h1>Quotes</h1>
+                        <h2>Adding a Quote:</h2>
+                        <p class="code">Morgann add quote [your quote] - [author's name]</p>
+                        <p>
+                            Adds a quote to the pool of quotes.
+                            <br>
+                            <br>
+                            <i>This pool is server-specific.</i>
+                        </p>
+
+                        <br>
+
+                        <h2>Searching & Removing:</h2>
+                        <p class="code">
+                            Morgann search quote [insult]
+                            <br>
+                            <br>
+                            <i>OR</i>
+                            <br>
+                            <br>
+                            Morgann random quote
+                        </p>
+                        <p>
+                            Shows a quote found using the search query.
+                            <br>
+                            Admins may remove a quote by reacting 🗑️ to the message.
+                            <br>
+                            <br>
+                            <i>Removing is an Admin Feature</i>
+                        </p>
+                    </div>
                 </div>
                 
-                <!-- Insults Card -->
-                <div class="card">
-                    <h1>Insults</h1>
-                    <h2>Adding an Insult:</h2>
-                    <p class="code">Morgann add insult [your insult]</p>
-                    <p>
-                        Adds an insult to the pool of insults used when targeting a user.
-                        <br>
-                        <br>
-                        <i>This pool is server-specific.</i>
-                    </p>
-                    
-                    <br>
-                    
-                    <h2>Searching & Removing:</h2>
-                    <p class="code">
-                        Morgann search insult [insult]
-                        <br>
-                        <br>
-                        <i>OR</i>
-                        <br>
-                        <br>
-                        Morgann random insult
-                    </p>
-                    <p>
-                        Shows an insult found using the search query.
-                        <br>
-                        Admins may remove an insult by reacting 🗑️ to the message.
-                        <br>
-                        <br>
-                        <i>Removing is an Admin Feature</i>
-                    </p>
-                </div>
-                
-                <!-- Quotes Card -->
-                <div class="card">
-                    <h1>Quotes</h1>
-                    <h2>Adding a Quote:</h2>
-                    <p class="code">Morgann add quote [your quote] - [author's name]</p>
-                    <p>
-                        Adds a quote to the pool of quotes.
-                        <br>
-                        <br>
-                        <i>This pool is server-specific.</i>
-                    </p>
-                    
-                    <br>
-                    
-                    <h2>Searching & Removing:</h2>
-                    <p class="code">
-                        Morgann search quote [insult]
-                        <br>
-                        <br>
-                        <i>OR</i>
-                        <br>
-                        <br>
-                        Morgann random quote
-                    </p>
-                    <p>
-                        Shows a quote found using the search query.
-                        <br>
-                        Admins may remove a quote by reacting 🗑️ to the message.
-                        <br>
-                        <br>
-                        <i>Removing is an Admin Feature</i>
-                    </p>
-                </div>
             </div>
         
         </div>
