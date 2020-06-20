@@ -4,6 +4,15 @@
 }
 
 
+/* Modded Elements */
+a {
+    text-decoration: underline;
+    font-size: inherit;
+    font-style: normal;
+    padding: 0px;
+}
+
+
 /* Nav Content */
 .nav {
     background-image: url(../../assets/backgrounddark.png);

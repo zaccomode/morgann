@@ -74,7 +74,7 @@ h2 {
     color: white;
 }
 
-p, ul {
+p, ul, a {
     font-family: newYork;
     color: white;
 }
@@ -160,12 +160,16 @@ p, ul {
     padding-left: 20px;
 }
 
-.footer > p {
+.footer > p, a {
     padding-right: 20px;
     
     font-size: 12px;
     text-align: right;
     font-style: italic;
+}
+
+.footer > a {
+    padding: 0px;
 }
 
 
@@ -208,5 +212,28 @@ p, ul {
 @media screen and (max-width: 1000px) {
     .page-content {
         margin: 40px;
+    }
+    
+    .footer {
+        flex-direction: column;
+    }
+    
+    .footer > img {
+        max-height: 15px;
+        padding: 10px;
+    }
+    
+    .footer > p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {    
+    .button {
+        padding: 10px 50px;
+    }
+    
+    .nav-left > img {
+        display: none;
     }
 }
