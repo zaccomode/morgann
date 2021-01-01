@@ -1,14 +1,14 @@
 /* Custom Fonts */
 @font-face {
     font-family: "Metropolis";
-    src: url("../assets/fonts/Metropolis-Bold.otf");
+    src: url("../content/fonts/Metropolis-Bold.otf");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Metropolis";
-    src: url("../assets/fonts/Metropolis-BoldItalic.otf");
+    src: url("../content/fonts/Metropolis-BoldItalic.otf");
     font-weight: bold;
     font-style: italic;
 }
@@ -890,13 +890,20 @@ body, html {
         display: flex;
     }
     
+    .header.small {
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
     .header-halves {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }   
     
     .header-left, .header-right {
         width: 100%;
-        height: 50%;
         
         justify-content: center;
         margin: 20px;
@@ -904,10 +911,12 @@ body, html {
     
     .header-left {
         align-items: flex-end;
+        height: 75%;
     }
     
     .header-right  {
-        align-items: flex-start;
+        align-items: center;
+        height: 25%;
     }
     
     .header-right > .header-background {
