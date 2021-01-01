@@ -1,79 +1,111 @@
 <!DOCTYPE html>
-
 <html>
-
     <head>
-    
-        <!-- Meta -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="Python, bot, Discord, insult">
-        <meta name="description" content="I got tired of insulting my friends, so I built a bot to do that for me.">
-        <meta name="author" content="Isaac Shea">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!-- Browser -->
-        <link rel="icon" type="image/png" href="assets/favicon.png">
-        <title>Morgann</title>
+        <title>Coming Soon | Morgann</title>
+        <link rel="icon" type="image/png" href="./assets/favicon.png">
+        
+        <!-- JS -->
+        <script src="js/index.js"></script>
+        <script src="js/header.js"></script>
         
         <!-- CSS -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3b3b5c1255.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
         
-        <link rel="stylesheet" href="css/global.css">
-        <link rel="stylesheet" href="css/page-specific/home.css">
-    
+        <link rel="stylesheet" href="./css/global.css">
     </head>
     
-    <body>
+    <body>    
+        <!-- Anchor Indicator -->
+        <div class="anchor-indicator">
+            <p class="subtitle">Returning 2021 //</p>
+            <span class="material-icons-round">quickreply</span>
+        </div>
         
-        <!-- Nav Bar -->
-        <nav class="nav">
-            <a class="button active" href="./help/about.html">Help</a>
-            <a class="button primary" href="https://discord.com/oauth2/authorize?client_id=705548577136574576&permissions=522304&scope=bot" target="_blank">Invite</a>
-        </nav>
-        
-        <!-- Hero Image -->
-        <header class="hero-image">
-            <img class="hero-logo" src="assets/morgannlogo.png" alt="Morgann Logo">
-            
-            <div class="hero-scrolldown">
-                <p>Insult Extraordinaire</p>
-                <span class="material-icons" style="margin-bottom: 1rem;">keyboard_arrow_down</span>
+        <!-- Page Header -->
+        <header class="header">
+            <div class="header-halves">
+                <div class="header-left">
+                    <img class="avatar-primary" src="./assets/avatar.png"> 
+                </div>
+
+                <div class="header-right">
+                    <div class="header-text">
+                        <h1 class="title">Morgann</h1>
+                        <p class="subtitle">The Insult Extrordinaire //</p>
+                    </div>
+                    <h1 class="header-background">//</h1>
+                </div>
+            </div>
+            <div class="header-prompt">
+                <span class="material-icons-round">keyboard_arrow_down</span>
             </div>
         </header>
         
-        
-        
-        <!-- Introduction -->
-        <div class="home-container">
-            <div class="home-text right">
-                <h1>Redefining Obnoxious</h1>
-                <p>
-                    I got bored of insulting my friends, so I built a bot to do that for me. Now, you can do the same!
-                    <br>
-                    <br>
-                    He can do other stuff, too, like store quotes, give cards to simps and chads, and more.
-                </p>
+        <!-- Page Content -->
+        <main class="page-content">
+            
+            <!-- Intro Content -->
+            <div class="page-section">
+                <div class="section-left">
+                    <h2>Morgann: Become Human</h2>
+                    <p class="subtitle">The Student Will Become THe Master //</p>
+                </div>
+                <div class="section-right">
+                    <p>
+                        A new update for Morgann is currently in the works, and it's a big one.
+                        <br>
+                        <br>
+                        We're talking better insults, better quotes, better administrator tools, and better... Well, everything, really.
+                    </p>
+                </div>
             </div>
-
-            <div class="home-text">
-                <h1>But what <i>does</i> he do?</h1>
-                <p>
-                    To be honest, Morgann is not much more than a meme bot. He will store insults and quotes, which can be dispensed at will, and give cards to other people of various attributes.
-                    <br>
-                    <br>
-                    I mean, what more do you want from a bot?!
-                </p>
+            
+            <!-- What's New Content -->
+            <div class="page-section alt">
+                <div class="section-left">
+                    <h2>What's New?</h2>
+                    <p class="subtitle">Why Should I Care? //</p>
+                </div>
+                <div class="section-right">
+                    <p>
+                        We're glad you asked! Here's what's coming:
+                    </p>
+                    <ul>
+                        <li>Completely rebuilt insult & quote systems</li>
+                        <li>Brand new administrator tools</li>
+                        <li>A fancy upgraded message recogniser</li>
+                        <li>A A super shmick new web client (you're looking at it!)</li>
+                        <br>
+                        <li><b>Awards:</b> give other members achievements of your choosing</li>
+                        <li><b>Cards & Melons 2.0:</b> collect & trade exclusive cards using Melons in a completely new way</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        
-        
+        </main>
         
         <!-- Footer -->
         <footer class="footer">
-            <img src="assets/studioionic.png" alt="Studio Ionic Logo">
-            <a href="https://isaacshea.com/legal/privacy.html" target="_blank" style="text-decoration: underline;">Privacy & Legal</a>
-            <p>Morgann was made entirely as a joke. <br> If you're looking for something useful, check out Brandonn.</p>
+            <div class="footer-social-icons">
+                <a href="https://github.com/zaccomode" class="button alt icon" target="_blank"> 
+                    <i class="fab fa-github" style="font-size: 20px"></i></a>
+                <a href="https://www.youtube.com/channel/UC15Ipgy22HdeOEVs_NRmjig?view_as=subscriber" class="button alt icon" target="_blank"> 
+                    <i class="fab fa-youtube" style="font-size: 20px"></i></a>
+                <a href="https://www.instagram.com/zaccomode/" class="button alt icon" target="_blank">
+                    <i class="fab fa-instagram" style="font-size: 20px"></i></a>
+                <a href="https://twitter.com/zaccomode" class="button alt icon" target="_blank">
+                    <i class="fab fa-twitter" style="font-size: 20px"></i></a>
+            </div>
+            <div class="footer-text">
+                <a href="legal.html">Privacy & Legal</a>
+                <img class="footer-favicon" src="assets/favicon.png">
+                <p>© Isaac Shea, 2020</p>
+            </div>
         </footer>
-    
     </body>
-
 </html>
