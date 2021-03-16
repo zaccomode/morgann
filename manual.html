@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Browser -->
+        <title>Manual | Morgann</title>
+        <link rel="icon" type="image/png" href="./content/favicon.png">
+        
+        <!-- JS -->
+        <script src="js/global.js"></script>
+        
+        <!-- CSS -->
+        <script src="https://kit.fontawesome.com/3b3b5c1255.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+        
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/manual.css">
+        <link rel="stylesheet" href="./css/themes/default.css">
+    </head>
+    
+    <body>
+
+        <!-- Nav -->
+        <nav class="nav alt">
+            <img src="./content/favicon.png">
+            <div class="nav-buttons">
+                <a class="button primary" href="https://discord.com/api/oauth2/authorize?client_id=705548577136574576&permissions=2147875904&redirect_uri=https%3A%2F%2Fmorgann.isaacshea.com%2F&scope=bot">Invite</a>
+                <a class="button highlight primary alt" href="manual.html">Manual</a>
+                <a class="button primary disabled">Login</a>
+                <a class="button icon mobile" onclick="openNav()"><span class="material-icons-round">menu</span></a>
+            </div>
+        </nav>
+
+        <!-- Full-Page Nav -->
+        <div id="fullPageNav" class="full-page-nav">
+            <a id="closeButton" class="button icon">
+                <span class="material-icons-round" href="javascript:void(0);" onclick="closeNav()">close</span>
+            </a>
+            
+            <div id="navContent" class="nav-content">
+                <a class="button highlight" href="https://discord.com/api/oauth2/authorize?client_id=705548577136574576&permissions=2147875904&redirect_uri=https%3A%2F%2Fmorgann.isaacshea.com%2F&scope=bot">Invite</a>
+                <a class="button">Manual</a>
+                <a class="button disabled">Login</a>
+            </div>
+        </div>
+
+
+        <!-- Fixed Sidebar -->
+        <div class="sidebar">
+
+            <div class="sidebar-content">
+                <a class="button tertiary with-icon highlight" href="#welcome">
+                    <span class="material-icons-round">home</span>
+                    Welcome
+                </a>
+                <a class="button tertiary with-icon" href="#getting-started">
+                    <span class="material-icons-round">anchor</span>
+                    Getting Started
+                </a>
+                <a class="button tertiary with-icon" href="#whats-new">
+                    <span class="material-icons-round">label</span>
+                    What's New
+                </a>
+
+                <a class="button tertiary with-icon" href="#insults">
+                    <span class="material-icons-round">local_fire_department</span>
+                    Insults
+                </a>
+                <div class="indent-section">
+                    <a class="button tertiary" href="#insults-creating">Creating</a>
+                    <a class="button tertiary" href="#insults-browsing">Browsing</a>
+                    <a class="button tertiary" href="#insults-cooldown">Cooldown</a>
+                    <a class="button tertiary" href="#insults-disabling">Disabling</a>
+                </div>
+
+                <a class="button tertiary with-icon" href="#quotes">
+                    <span class="material-icons-round">format_quote</span>
+                    Quotes
+                </a>
+                <div class="indent-section">
+                    <a class="button tertiary" href="#quotes-creating">Creating</a>
+                    <a class="button tertiary" href="#quotes-browsing">Browsing</a>
+                    <a class="button tertiary" href="#quotes-dailyquote">Daily Quote</a>
+                </div>
+
+                <a class="button tertiary with-icon" href="#moderation">
+                    <span class="material-icons-round">gavel</span>
+                    Moderation
+                </a>
+                <div class="indent-section">
+                    <a class="button tertiary" href="#moderation-config">Configuration</a>
+                    <a class="button tertiary" href="#moderation-binding">Binding</a>
+                </div>
+
+                <a class="button tertiary with-icon" href="#misc">
+                    <span class="material-icons-round">miscellaneous_services</span>
+                    Miscellaneous
+                </a>
+                <div class="indent-section">
+                    <a class="button tertiary" href="#misc-japsaying">Japanese Saying</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main">
+
+            <!-- Welcome -->
+            <a name="welcome"></a>
+            <div class="page-section">
+                <div class="section-text w100">
+                    <h1>Welcome to The Manual</h1>
+                    <h3>How to Make the Most of Morgann</h3>
+                    <p>
+                        I’m Morgann, a bot created by Isaac Shea to socially abuse his friends. If you want peace and tranquility in your server, you’ve got the wrong bot. If you want to cause chaos in the form of unrelenting textual abuse, I’m your guy.
+                    </p>
+
+
+                    <h2>What I Do</h2>
+                    <ul>
+                        <li>I specialise in delivering scathing insults from your friends</li>
+                        <li>I'm excellent at storing and dispensing those amazing one-liners everyone quotes</li>
+                        <li>I'm also brilliant at handing out awards to all the absolute chads who put pineapple on pizza (among other things). You know pineapple belongs there, stop denying it</li>
+                    </ul>
+
+
+                    <div class="subsection alert">
+                        <span class="material-icons-round">warning</span>
+                        <p>
+                            The Become Human (21w01a) Update has introduced fundamental redesigns to many of the old commands. 
+                            <br> <br>
+                            We recommend reading the new documentation closely for any changes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <span class="sep horizontal"></span>
+
+            <!-- Getting Started -->
+            <a name="getting-started"></a>
+            <div class="page-section">
+                <div class="section-text w100">
+                    <h1>Getting Started</h1>
+                    <p>
+                        To get started using Morgann, you need to invite him to join your server, and accept all the permissions he asks of you. He will not ask for anything more than he requires to function properly.
+                        <br>
+                        <br>
+                        <b>Failing to accept the correct permissions may disable some features.</b>
+                    </p>
+                    <a class="button primary highlight alt">Invite Now</a>
+
+
+                    <h2>Using Rosetta</h2>
+                    <p class="list-below">
+                        Rosetta is a brand-new form of communicating with bots that Morgann has pioneered since his inception. It is designed to allow for more semantic communication - that is, talking to Morgann should feel more like talking to another person than talking to a bot.
+                        <br>
+                        <br>
+                        <b>That being said, there are some things to keep in mind:</b>
+                    </p>
+                    <ul>
+                        <li>Every message must contain the word “Morgann”, or @mention Morgann for him to detect it.</li>
+                        <li>Morgann will recognise Discord objects (@mentions, #channels, etc.), so be sure to properly format them.</li>
+                        <li>Nested text chunks (such as quotes or insults) must be placed within “double quotations” so that Morgann can find them properly.</li>
+                    </ul>
+                    <p class="list-below">
+                        Morgann also has Recognition Nudges in the form of reactions that you can use to tell if he can understand you.
+                    </p>
+                    <ul>
+                        <li>He will respond with 👋  when he recognises his name,</li>
+                        <li>He will add 🤔  when he’s found the right category of commands, and;</li>
+                        <li>He’ll add ❓ If he couldn’t find a command that matched your query.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <span class="sep horizontal"></span>
+
+            <!-- What's New -->
+            <a name="whats-new"></a>
+            <div class="page-section">
+                <div class="section-text w100">
+                    <h1>What's New</h1>
+                    <h3>Become Human Update | <i>21w01a</i></h3>
+                    <p>
+                        The Become Human update dropped March 2021, and brought on a slew of new features for you to dig your sadistic hands into, as well as cleaning up and refining old ones.
+                    </p>
+
+                    <h2>General</h2>
+                    <ul>
+                        <li>The Rosetta Message Processing system was introduced allowing for brand new, intelligent understanding of your messages</li>
+                        <li>The web client is now completely redesigned, with a fresh new visual appearance</li>
+                    </ul>
+
+                    <h2>Insults</h2>
+                    <ul>
+                        <li>Insults can now be personalised - @mentioning someone when adding an insult will ensure it only appears for that person</li>
+                        <li>Insults now have a far better picking system - server insults will be chosen from until someone has more than 5 personalised insults just for them, in which case only their insults will be used</li>
+                        <li>Searching for insults has been improved by a huge amount - searching will create a search engine-like interface to select insults. The same has been done for searching for quotes</li>
+                    </ul>
+
+                    <h2>Quotes</h2>
+                    <ul>
+                        <li>Message quoting has been dramatically improved - @mentioning someone as the quote’s author will dynamically save their name, so it will update when their nickname does</li>
+                        <li>Reacting to a message with  3 📌 emojis will automatically quote it</li>
+                        <li>A daily quote system - each day, a random quote will be selected and displayed on a message that can be pinned to any channel</li>
+                    </ul>
+
+                    <h2>Moderation</h2>
+                    <ul>
+                        <li>Moderation tools overall have been significantly improved as to reduce the chaos Morgann can inflict</li>
+                        <li>There is now new criteria for assessing administrators or moderators - Administrators are defined by Discord (such as server owners), and Moderators are defined by Morgann. Both have different levels of access and control over how Morgann functions</li>
+                        <li>By default, Morgann will wait 1 minute between insults, and this can be customised or turned off entirely</li>
+                        <li>Morgann can now be bound to entire categories of channels, as well as individual channels</li>
+                        <li>When a moderator disables targeting of insults, only other moderators will be able to re-enable targeting. Insults will not be able to be added during this time as well</li>
+                    </ul>
+                </div>
+            </div>
+
+            <span class="sep horizontal"></span>
+
+            <!-- Insults -->
+            <a name="insults"></a>
+            <div class="page-section">
+                <div class="section-text w100">
+                    <h1>Insults</h1>
+                    <p>
+                        Ruining someone’s day is at the core of what Morgann does, and here’s how you can harness this power for your agenda.
+                    </p>
+
+                    <h2>Targeting Someone</h2>
+                    <p>
+                        When someone is targeted, they’ll be roasted using a randomly chosen insult every minute if they send messages (the interval is changeable). Targeting someone is as simple as telling Morgann:
+                    </p>
+                    <div class="subsection quote">
+                        <span class="material-icons-round">format_quote</span>
+                        <p>Morgann, target @mention</p>
+                    </div>
+                    <div class="subsection info">
+                        <span class="material-icons-round">info</span>
+                        <p>A Moderator must target someone for the first time after Morgann has joined your server, or has been turned off.</p>
+                    </div>
+
+
+                    <a name="insults-creating"></a>
+                    <h2>Creating Insults</h2>
+                    <p>
+                        Targeting someone is no good without any insults to throw their way. To add an insult, use:
+                    </p>
+                    <div class="subsection quote">
+                        <span class="material-icons-round">format_quote</span>
+                        <p>Morgann, add the insult "[your insult here]"</p>
+                    </div>
+                    <p>
+                        And he’ll handle the rest. If you’d like to get a little more personal about your attacks, you can ask Morgann to add an insult for a specific person using:
+                    </p>
+                    <div class="subsection quote">
+                        <span class="material-icons-round">format_quote</span>
+                        <p>Morgann, add the insult "[your insult here]" for @mention</p>
+                    </div>
+                    <div class="subsection info">
+                        <span class="material-icons-round">info</span>
+                        <p>If Morgann is not targeting anyone, only Moderators can add insults.</p>
+                    </div>
+
+
+                    <a name="insults-browsing"></a>
+                    <h2>Browsing Insults</h2>
+                    <p>
+                        If you’d like to search for an insult, or find a random one, you can ask Morgann to do exactly that:
+                    </p>
+                    <div class="subsection quote">
+                        <span class="material-icons-round">format_quote</span>
+                        <p>
+                            Morgann, give me a random insult
+                            <br> <br> OR <br> <br>
+                            Morgann, search for an insult by @mention   <br>
+                            Morgann, search for an insult for @mention  <br>
+                            Morgann, search for an insult that has “[query]”
+                        </p>
+                    </div>
+                    <p>
+                        Each of the search queries, provided there are results, will return a search engine-like menu for you to browse through your precious insults.
+                        <br> <br>
+                        Moderators can also remove insults through this menu.
+                    </p>
+
+
+                    <a name="insults-cooldown"></a>
+                    <h2>Insult Cooldown</h2>
+                    <h4>Moderator Feature</h4>
+                    <p>
+                        The insult cooldown is the interval that Morgann will insult the targeted user at, whenever they are messaging. By default, it is once a minute, but you can access or update this interval using:
+                    </p>
+                    <div class="subsection quote">
+                        <span class="material-icons-round">format_quote</span>
+                        <p>
+                            Morgann, update the insult cooldown
+                        </p>
+                    </div>
+                    <p>
+                        A menu with the cooldown options will then appear. You can even turn the cooldown off entirely, but be warned, this may become spammy or destructive to normal conversation.
+                    </p>
+
+
+                    <a name="insults-disabling"></a>
+                    <h2>Disabling Targeting & Insults</h2>
+                    <h4>Moderator Feature</h4>
+                    <p>
+                        If you find Morgann’s insult feature annoying, it can be disabled using:
+                    </p>
+                    <div class="subsection quote">
+                        <span class="material-icons-round">format_quote</span>
+                        <p>
+                            Morgann, disable targeting
+                        </p>
+                    </div>
+                    <p>
+                        This will stop Morgann from targeting anyone, accepting requests on who to target (except from Moderators), and disable the ability for insults to be added (except for Moderators).
+                    </p>
+                </div>
+            </div>
+
+            <span class="sep horizontal"></span>
+
+            <!-- Quotes -->
+            <a name="quotes"></a>
+            <div class="page-section">
+                <div class="section-text w100">
+                    <h1>Quotes</h1>
+                    <p>
+                        Storing those bizarre one-liners your friends say has never been easier! Here’s how to make use of it.
+                    </p>
+
+
+                    <a name="quotes-creating"></a>
+                    <h2>Automatic Quoting</h2>
+                    <p>
+                        If someone posts a particularly noteworthy message, adding 3 pin 📌 reactions to it will automatically quote the message, storing the message’s author and the message’s content.
+                    </p>
+                    <div class="subsection info">
+                        <span class="material-icons-round">info</span>
+                        <p>The message must have text content. Morgann cannot save images.</p>
+                    </div>
+
+
+                    <h2>Manual Quoting</h2>
+                    <p>
+                        In most circumstances, you may want to write down a quote someone said, and save it. You can do so by saying:
+                    </p>
+                    <div class="subsection quote">
+                        <span class="material-icons-round">format_quote</span>
+                        <p>
+                            Morgann, add the quote “[your quote here]” by @mention
+                            <br> <br> OR <br> <br>
+                            Morgann, add the quote “[your quote here]”
+                        </p>
+                    </div>
+                    <p>
+                        If you chose the latter technique, you’ll have to respond to Morgann’s message with the author’s name within 60 seconds for it to save.
+                    </p>
+
+                    <a name="quotes-browsing"></a>
+                    <h2>Browsing Quotes</h2>
+                    <p>
+                        Just as with insults, quotes can be searched for or randomly selected using the following commands:
+                    </p>
+                    <div class="subsection quote">
+                        <span class="material-icons-round">format_quote</span>
+                        <p>
+                            Morgann, give me a random quote
+                            <br> <br> OR <br> <br>
+                            Morgann, search for a quote by @mention     <br>
+                            Morgann, search for a quote that has “[query]”
+                        </p>
+                    </div>
+                    <p>
+                        Each of the search queries, provided there are results, will return a search engine-like menu for you to browse through your infamous quotes
+                        <br> <br>
+                        Moderators can also remove quotes through this menu.
+                    </p>
+
+
+                    <a name="quotes-dailyquote"></a>
+                    <h2>Daily Quote</h2>
+                    <h4>Moderator Feature</h4>
+                    <p>
+                        Morgann can be set up to update a message every day with a random quote from your server. You can begin the setup using:
+                    </p>
+                    <div class="subsection quote">
+                        <span class="material-icons-round">format_quote</span>
+                        <p>
+                            Morgann, setup our daily quote
+                        </p>
+                    </div>
+                    <p>
+                        A message containing a random quote will then be generated, and you are encouraged to pin this message to the channel so you can easily see your quotes.
+                    </p>
+                </div>
+            </div>
+
+
+            <span class="sep horizontal"></span>
+
+            <!-- Moderation -->
+            <a name="moderation"></a>
+            <div class="page-section">
+                <div class="section-text w100">
+                    <h1>Moderation</h1>
+                    <p>
+                        Morgann can be quite a destructive bot, and as such some features have been implemented to assist Moderators in configuring him to their likes.
+                    </p>
+
+                    <h2>About Administrators & Moderators</h2>
+                    <p>
+                        There is a slight difference between Administrators and Moderators. Administrators are a level of management defined by Discord, such as your server’s owner. Administrators are generally configured in Server Settings > Roles > Advanced Permissions. 
+                        <br>
+                        Moderators are defined by Administrators as a lower-level moderation team. This would generally match your server’s moderation team.
+                    </p>
+
+
+                    <a name="moderation-config"></a>
+                    <h2>Configuring Moderators</h2>
+                    <h4>Administrator Feature</h4>
+                    <p>
+                        To set up or update your server’s Moderators, use the following command:
+                    </p>
+                    <div class="subsection quote">
+                        <span class="material-icons-round">format_quote</span>
+                        <p>
+                            Morgann, set the Moderator role to @role-mention
+                        </p>
+                    </div>
+                    <p>
+                        Everyone with that role, and everyone who appears higher on your role hierarchy than that role, will be given Moderator permissions. This will remain dynamic, so if someone is demoted from Moderator in the future, Morgann will honour this.
+                    </p>
+
+
+                    <a name="moderation-binding"></a>
+                    <h2>Channel Binding</h2>
+                    <h4>Moderator Feature</h4>
+                    <p>
+                        To avoid Morgann being able to post in every channel, channel and category binding has been added. You can define a channel or category for Morgann to bind to by using:
+                    </p>
+                    <div class="subsection quote">
+                        <span class="material-icons-round">format_quote</span>
+                        <p>
+                            Morgann, bind to this channel   <br>
+                            Morgann, bind to #channel
+                            <br> <br> OR <br> <br>
+                            Morgann, bind to this category  <br>
+                            Morgann, bind to #channel’s category
+                        </p>
+                    </div>
+                    <p>
+                        As soon as this is completed, Morgann will not respond to commands, insult people, or otherwise cause chaos outside of the defined areas.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
